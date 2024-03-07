@@ -1,0 +1,26 @@
+{
+  "name": "lifetracker",
+  "version": "1.0.0",
+  "description": "1. **Dashboard**:\r    - Test that the dashboard displays summaries of current goals, upcoming tasks, meals for the week, and recent events logged.\r    - Test that the dashboard updates in real-time when new data is added or existing data is modified.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "cd life-tracker && ng serve && cd ../server && nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/perrychambers/LifeTracker.git"
+  },
+  "author": "Perry Chambers",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/perrychambers/LifeTracker/issues"
+  },
+  "homepage": "https://github.com/perrychambers/LifeTracker#readme",
+  "dependencies": {
+    "angular": "^1.8.2",
+    "express": "^4.18.3",
+    "mongoose": "^8.2.1",
+    "nodemon": "^3.1.0"
+  }
+}
