@@ -7,6 +7,7 @@ import { MatSelectModule } from '@angular/material/select';
 import { MatFormFieldModule } from '@angular/material/form-field'
 import { MatListModule } from '@angular/material/list';
 import { MatDivider } from '@angular/material/divider';
+import { DashboardComponent } from '../dashboard/dashboard.component';
 
 @Component({
   selector: 'app-toolbar',
@@ -19,7 +20,8 @@ import { MatDivider } from '@angular/material/divider';
     MatFormFieldModule, 
     MatSelectModule,
     MatListModule,
-    MatDivider
+    MatDivider,
+    DashboardComponent
   ],
   templateUrl: './toolbar.component.html',
   styleUrl: './toolbar.component.css'

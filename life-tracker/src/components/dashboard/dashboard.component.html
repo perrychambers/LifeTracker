@@ -1,0 +1,50 @@
+<div class="dashboard">
+    <h1>Welcome to Your Dashboard</h1>
+    <p>This is a template dashboard. You can customize it to fit your needs.</p>
+    
+    <mat-grid-list cols="2" gutterSize="20px">
+      <mat-grid-tile>
+        <mat-card class="widget">
+          <mat-card-header>
+            <mat-card-title>Savings Account Chart</mat-card-title>
+          </mat-card-header>
+          <mat-card-content>
+            <ngx-charts-bar-vertical
+              [view]="[300, 200]"
+              [scheme]="'forest'"
+              [results]="chartData"
+              [xAxis]="showXAxis"
+              [yAxis]="showYAxis"
+              [legend]="showLegend"
+              [showXAxisLabel]="showXAxisLabel"
+              [showYAxisLabel]="showYAxisLabel"
+              [xAxisLabel]="xAxisLabel"
+              [yAxisLabel]="yAxisLabel">
+            </ngx-charts-bar-vertical>
+          </mat-card-content>
+        </mat-card>
+      </mat-grid-tile>
+      <mat-grid-tile>
+        <mat-card class="widget task-list">
+            <mat-card-header>
+              <mat-card-title>Tasks List</mat-card-title>
+            </mat-card-header>
+            <mat-card-content>
+              <mat-list>
+                <mat-list-item class="task-list-item" *ngFor="let task of tasks">
+                  <mat-icon mat-list-icon class="task-icon">check_circle_outline</mat-icon>
+                  <div mat-line>{{ task }}</div>
+                  <div mat-line class="task-meta">
+                    <button mat-icon-button class="complete-button" aria-label="Complete">
+                      <mat-icon>done</mat-icon>
+                    </button>
+                    <span class="task-date">{{ randomDate() | date: 'MMM dd, yyyy' }}</span>
+                  </div>
+                </mat-list-item>
+              </mat-list>
+            </mat-card-content>
+          </mat-card>          
+      </mat-grid-tile>
+    </mat-grid-list>
+  </div>
+  

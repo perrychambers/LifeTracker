@@ -1,8 +1,14 @@
 <mat-toolbar class="title-toolbar" fxLayout="row wrap" fxLayoutAlign="center center"> 
-        <button mat-raised-button (click)="sidenav.toggle()" fxHide fxShow.xs>
-            <mat-icon>menu</mat-icon>
-        </button>
-        <span class="title-center">LifeTrackerApp</span> 
+    <button mat-raised-button (click)="sidenav.toggle()" fxHide fxShow.xs>
+        <mat-icon class="toolbar-button">menu</mat-icon>
+    </button>
+    <span class="title-center">LifeTrackerApp</span> 
+    <button mat-raised-button>
+        <div class="button-row">
+            <mat-icon class="toolbar-button">settings</mat-icon>
+            <mat-icon class="toolbar-button">person-outline</mat-icon>
+        </div>
+    </button>
 </mat-toolbar> 
 
 <mat-sidenav-container>
@@ -14,5 +20,6 @@
       </mat-nav-list>
     </mat-sidenav>
     <mat-sidenav-content fxLayoutAlign="center center">
+        <app-dashboard></app-dashboard>
     </mat-sidenav-content>
   </mat-sidenav-container>
