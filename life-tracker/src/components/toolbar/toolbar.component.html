@@ -1,0 +1,18 @@
+<mat-toolbar class="title-toolbar" fxLayout="row wrap" fxLayoutAlign="center center"> 
+        <button mat-raised-button (click)="sidenav.toggle()" fxHide fxShow.xs>
+            <mat-icon>menu</mat-icon>
+        </button>
+        <span class="title-center">LifeTrackerApp</span> 
+</mat-toolbar> 
+
+<mat-sidenav-container>
+    <mat-sidenav #sidenav>
+      <mat-nav-list>
+        <mat-icon>dashboard</mat-icon><a mat-list-item routerLink="page1" (click)="sidenav.toggle()"> Dashboard</a> <mat-divider></mat-divider>
+        <mat-icon>insert_page_break</mat-icon><a mat-list-item routerLink="page2" (click)="sidenav.toggle()"> New Page</a> <mat-divider></mat-divider>
+        <mat-icon>pages</mat-icon><a mat-list-item routerLink="page3" (click)="sidenav.toggle()"> Manage Pages</a> <mat-divider></mat-divider>
+      </mat-nav-list>
+    </mat-sidenav>
+    <mat-sidenav-content fxLayoutAlign="center center">
+    </mat-sidenav-content>
+  </mat-sidenav-container>
