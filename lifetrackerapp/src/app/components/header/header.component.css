@@ -1,0 +1,31 @@
+.mat-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #333; /* Background color of the toolbar */
+  color: white; /* Text color */
+  padding: 10px 20px; /* Adjust padding as needed */
+}
+
+.left-button,
+.right-button {
+  margin-right: 10px; /* Adjust margin as needed */
+}
+
+.title {
+    flex-grow: 1; /* Allow the title to grow and take up remaining space */
+    text-align: center; /* Center-align the title */
+}
+  
+.button {
+    background-color: #555; /* Background color of buttons */
+    color: white; /* Text color */
+    border: none;
+    padding: 8px 16px; /* Adjust padding as needed */
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.white-icon {
+    color: white;
+}

@@ -1,0 +1,14 @@
+
+.btn {
+    background-color: #555;
+    color: white;
+    border: none;
+    padding: 20px 40px; /* Adjust padding to change button size */
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.btn:hover {
+    background-color: #777;
+}
