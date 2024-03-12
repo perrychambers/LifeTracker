@@ -7,7 +7,7 @@ import { faTimes } from '@fortawesome/free-solid-svg-icons';
 @Component({
   selector: 'app-task-item',
   standalone: true,
-  imports: [NgFor, NgClass, FaIconComponent, NgStyle],
+  imports: [NgClass, FaIconComponent, NgStyle],
   templateUrl: './task-item.component.html',
   styleUrl: './task-item.component.css'
 })

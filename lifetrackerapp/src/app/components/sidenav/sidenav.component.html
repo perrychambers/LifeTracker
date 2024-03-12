@@ -1,0 +1,25 @@
+<mat-sidenav-container class="sidenav-container" autosize>
+	<mat-sidenav #sidenav class="sidenav" mode="side" opened="true">
+		<mat-nav-list>
+            <a  [routerLink]="['/']">
+            <mat-list-item class="parent">
+                Dashboard
+				<mat-icon mat-list-icon>dashboard</mat-icon>
+			</mat-list-item>
+            </a>
+            <a [routerLink]="['/tasks']">
+			<mat-list-item class="parent">
+                Tasks
+				<mat-icon mat-list-icon>task</mat-icon>
+			</mat-list-item>
+            </a>
+		</mat-nav-list>
+</mat-sidenav>
+
+<div class="sidenav-content">
+    <router-outlet></router-outlet>
+</div>
+
+</mat-sidenav-container>
+
+

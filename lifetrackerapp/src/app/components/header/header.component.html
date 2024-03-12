@@ -1,9 +1,6 @@
 <mat-toolbar>
-    <button class="button left-button">
-        <a [routerLink]="['/tasks']">
+    <button class="button left-button" onClick="toggleSidenav()">
             <mat-icon class="white-icon">menu</mat-icon>
-        </a>
-
     </button>
     <div class="title">{{ title }}</div>
     <button class="button right-button">
