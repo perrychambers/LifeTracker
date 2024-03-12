@@ -5,6 +5,7 @@
   background-color: #333; /* Background color of the toolbar */
   color: white; /* Text color */
   padding: 10px 20px; /* Adjust padding as needed */
+  z-index: 10;
 }
 
 .left-button,
