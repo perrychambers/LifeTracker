@@ -1,5 +1,6 @@
 import { NgStyle } from '@angular/common';
 import { Component, Input, Output, EventEmitter } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-task-button',
@@ -13,7 +14,7 @@ export class TaskButtonComponent {
   @Input() color: string;
   @Output() btnClick = new EventEmitter();
 
-  constructor() {}
+  constructor(private router: Router) {}
 
   onClick(): void {
     this.btnClick.emit();
