@@ -1,4 +1,4 @@
-<div class="container">
+<div *ngIf="hasRoute('/tasks')" class="container">
     <h1>Task System</h1>
     <app-task-button
         color="green"
@@ -6,4 +6,10 @@
         (btnClick)="toggleAddTask()"
     >
     </app-task-button>
+
+    <div
+        class="task-list"
+    >
+        <app-tasks></app-tasks>
+    </div>
 </div>

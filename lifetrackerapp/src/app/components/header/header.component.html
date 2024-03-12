@@ -1,8 +1,9 @@
 <mat-toolbar>
     <button class="button left-button">
-        <mat-icon class="white-icon">
-            menu
-        </mat-icon>
+        <a [routerLink]="['/tasks']">
+            <mat-icon class="white-icon">menu</mat-icon>
+        </a>
+
     </button>
     <div class="title">{{ title }}</div>
     <button class="button right-button">

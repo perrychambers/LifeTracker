@@ -1,5 +1,5 @@
 .container {
-    max-width: 500px;
+    max-width: 400px;
     margin: 30px auto;
     overflow: auto;
     min-height: 300px;
@@ -8,12 +8,19 @@
     border-radius: 5px;
     position: relative;
     display: flex;
-    flex-direction: row; /* Arrange items horizontally */
-    justify-content: space-between; /* Distribute items evenly along the main axis */
-    align-items: flex-start; /* Align items at the start (top) */
+    flex-direction: column; /* Arrange items vertically */
+    align-items: center; /* Center items horizontally */
+    justify-content: flex-start; /* Align items at the start (top) */
 }
+
 
 .h1 {
     margin: 0; /* Remove default margin */
     font-size: 24px; /* Adjust font size as needed */
+}
+
+.task-list {
+    margin-top: 20px; /* Add spacing between header and task list */
+    width: 100%; /* Ensure task list spans full width */
+    max-width: 300px; /* Adjust maximum width as needed */
 }
