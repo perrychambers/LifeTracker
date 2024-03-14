@@ -1,9 +1,33 @@
 .sidenav-container {
     position: absolute;
-    top: 100;
+    top: 90;
     left: 0;
     width: 100%;
     height: 100%;
     visibility: hidden;
     z-index: 0;
   }
+
+.sidenav {
+  background-color: black;
+  width: 200px;
+}
+
+.sidenav-item {
+  background-color: #e4e4e4;
+  align-self: right;
+  padding-top: 5px;
+}
+
+.sidenav-icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+}
+
+br {
+  display: block;
+  content: "";
+  margin-top: 0;
+}

@@ -1,16 +1,24 @@
-<mat-sidenav-container class="sidenav-container" autosize>
+<mat-sidenav-container class="sidenav-container">
 	<mat-sidenav #sidenav class="sidenav" mode="side" opened="true">
 		<mat-nav-list>
+			<a  [routerLink]="['/']">
+				<mat-list-item class="sidenav-item">
+					Account
+					<mat-icon mat-list-icon class="sidenav-icon">account_circle</mat-icon>
+				</mat-list-item>
+				</a>
             <a  [routerLink]="['/']">
-            <mat-list-item class="parent">
-                Dashboard
-				<mat-icon mat-list-icon>dashboard</mat-icon>
+			<br />
+			<mat-list-item class="sidenav-item">
+				Dashboard
+				<mat-icon mat-list-icon class="sidenav-icon">dashboard</mat-icon>
 			</mat-list-item>
-            </a>
+			</a>
+			<br />
             <a [routerLink]="['/tasks']">
-			<mat-list-item class="parent">
+			<mat-list-item class="sidenav-item">
                 Tasks
-				<mat-icon mat-list-icon>task</mat-icon>
+				<mat-icon mat-list-icon class="sidenav-icon">task</mat-icon>
 			</mat-list-item>
             </a>
 		</mat-nav-list>
